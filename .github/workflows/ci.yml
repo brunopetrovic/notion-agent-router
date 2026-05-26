@@ -10,7 +10,6 @@ jobs:
   test:
     name: Build & Test
     runs-on: ubuntu-latest
-    node-version: "22"
 
     steps:
       - name: Checkout
