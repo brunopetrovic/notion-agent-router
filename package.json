@@ -1,0 +1,44 @@
+{
+  "name": "notion-agent-router",
+  "version": "1.0.0",
+  "description": "Route Notion tasks to humans, Notion AI, deterministic workers, or external agents by risk, cost, and execution fit.",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "bin": {
+    "notion-agent-router": "./dist/cli.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "check": "tsc --noEmit",
+    "test": "vitest",
+    "test:run": "vitest run",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "notion",
+    "routing",
+    "task",
+    "agent",
+    "automation",
+    "rule-engine"
+  ],
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "files": [
+    "dist"
+  ],
+  "devDependencies": {
+    "@types/node": "^22.9.0",
+    "tsx": "^4.20.6",
+    "typescript": "^5.8.0",
+    "vitest": "^4.1.7"
+  }
+}
